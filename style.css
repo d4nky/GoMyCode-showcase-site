@@ -85,7 +85,54 @@ header p {
 	margin: auto;
 	padding-top: 90px;
 }
-
+.flex-container {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	flex: 1 1 100%;
+}
+.text-card {
+	flex: 30 0 50%;
+}
+#cake {
+	background-image: url("imgs/cake1.jpg");
+	background-position: 50% 50%;
+	background-size: cover;
+	max-height: 352px;
+}
+#berries {
+	background-image: url("imgs/cake2.jpeg");
+	background-position: 50% 50%;
+	background-size: cover;
+	max-height: 352px;
+}
+#oats {
+	background-image: url("imgs/cake3.jpeg");
+	background-position: 50% 50%;
+	background-size: cover;
+	max-height: 352px;
+}
+.text-card {
+	padding: 30px 10px;
+}
+.text-card .titles,
+.paragraphs,
+button {
+	margin-top: 20px;
+}
+.text-card .titles {
+	font-size: 24px;
+	font-weight: 600;
+}
+.section-3-btn {
+	font-family: "Roboto";
+	letter-spacing: 2px;
+	font-size: 14px;
+	background: transparent;
+	border: none;
+	border-bottom: 2px solid black;
+	font-weight: 400;
+}
 #section-4 {
 	width: 350px;
 	margin: auto;
@@ -172,7 +219,7 @@ header p {
 	font-family: "Playfair Display";
 	margin-bottom: 15px;
 }
-.food-container{
+.food-container {
 	margin-bottom: 30px;
 }
 #chicken {
@@ -286,16 +333,16 @@ footer a {
 	.content {
 		width: 540px;
 	}
-	#section-6{
+	#section-6 {
 		width: 540px;
 	}
-	#section-9{
+	#section-9 {
 		width: 540px;
 	}
 	.inputs input {
 		width: 540px;
 	}
-	.terms{
+	.terms {
 		margin-left: 0;
 	}
 }
@@ -313,14 +360,30 @@ footer a {
 	#section-2 {
 		width: 540px;
 	}
-	.dates{
+	.dates {
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;
 		justify-content: space-between;
 	}
-	.date{
+	.date {
 		width: 295px;
+	}
+	.flex-container {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		flex: 1 1 100%;
+	}
+	.text-card {
+		flex-basis: 33.333333%;
+		height: 352px;
+		padding: 30px;
+		display: flex;
+		flex-direction: column;	
+		justify-content: center;
+		align-items: center;
+
 	}
 	#section-4 {
 		width: 700px;
@@ -328,17 +391,17 @@ footer a {
 	.content {
 		width: 700px;
 	}
-	#section-6{
+	#section-6 {
 		width: 700px;
 	}
-	#section-6 h2{
+	#section-6 h2 {
 		font-weight: 600;
 	}
-	#section-7 img{
+	#section-7 img {
 		flex: 1;
 		width: 100%;
 	}
-	.food-container{
+	.food-container {
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;
@@ -346,13 +409,13 @@ footer a {
 		margin: auto;
 		width: 540px;
 	}
-	#section-9{
+	#section-9 {
 		width: 700px;
 	}
 	.inputs input {
 		width: 540px;
 	}
-	.terms{
+	.terms {
 		margin-left: 79.5px;
 	}
 }
@@ -370,13 +433,13 @@ footer a {
 	#section-2 {
 		width: 820px;
 	}
-	.dates{
+	.dates {
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;
 		justify-content: space-between;
 	}
-	.date{
+	.date {
 		width: 246px;
 	}
 	#section-4 {
@@ -385,31 +448,31 @@ footer a {
 	.content {
 		width: 940px;
 	}
-	#section-5{
+	#section-5 {
 		height: 660px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		margin: auto;
 	}
-	#section-6{
+	#section-6 {
 		width: 940px;
 		padding-bottom: 50px;
 	}
-	#section-6 h2{
+	#section-6 h2 {
 		font-weight: 600;
 	}
-	.menus{
+	.menus {
 		display: flex;
 	}
-	.menu{
+	.menu {
 		padding: 30px;
 	}
-	#section-7 img{
+	#section-7 img {
 		flex: 1;
 		width: 100%;
 	}
-	.food-container{
+	.food-container {
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;
@@ -417,27 +480,27 @@ footer a {
 		margin: auto;
 		width: 540px;
 	}
-	#section-8{
+	#section-8 {
 		display: flex;
 		padding-top: 160px;
 		padding-bottom: 160px;
 	}
-	.food-container{
+	.food-container {
 		width: 668px;
 		display: flex;
 		flex-wrap: nowrap;
 		justify-content: space-between;
 	}
-	#section-9{
+	#section-9 {
 		width: 820px;
 	}
-	.wrapper{
+	.wrapper {
 		width: 400px;
 	}
 	.inputs input {
 		width: 540px;
 	}
-	.terms{
+	.terms {
 		margin-left: 139px;
 	}
 }
@@ -445,7 +508,7 @@ footer a {
 	.bottom-header {
 		width: 928px;
 	}
-	.bottom-header p{
+	.bottom-header p {
 		padding-top: 10px;
 		margin: auto;
 		width: 699px;
@@ -460,13 +523,13 @@ footer a {
 	#section-2 {
 		width: 1020px;
 	}
-	.dates{
+	.dates {
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;
 		justify-content: space-between;
 	}
-	.date{
+	.date {
 		width: 312px;
 	}
 	#section-4 {
@@ -475,35 +538,35 @@ footer a {
 	.content {
 		width: 1140px;
 	}
-	.content h2{
+	.content h2 {
 		margin-top: 20px;
 	}
-	#section-5{
+	#section-5 {
 		height: 800px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		margin: auto;
 	}
-	#section-6{
+	#section-6 {
 		width: 1140px;
 		padding-top: 90px;
 		padding-bottom: 50px;
 	}
-	#section-6 h2{
+	#section-6 h2 {
 		font-weight: 600;
 	}
-	.menus{
+	.menus {
 		display: flex;
 	}
-	.menu{
+	.menu {
 		padding: 30px;
 	}
-	#section-7 img{
+	#section-7 img {
 		flex: 1;
 		width: 100%;
 	}
-	.food-container{
+	.food-container {
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;
@@ -511,36 +574,35 @@ footer a {
 		margin: auto;
 		width: 540px;
 	}
-	#section-8{
+	#section-8 {
 		display: flex;
 		padding-top: 160px;
 		padding-bottom: 130px;
 	}
-	.circle{
+	.circle {
 		height: 270px;
 		width: 270px;
 	}
-	.circle p{
+	.circle p {
 		margin-top: 20px;
 		padding: 30px;
 	}
-	.food-container{
+	.food-container {
 		width: 668px;
 		display: flex;
 		flex-wrap: nowrap;
 		justify-content: space-between;
 	}
-	.inputs input{
-		
+	.inputs input {
 		width: 550px;
 	}
-	.wrapper{
+	.wrapper {
 		width: 400px;
 	}
 	.inputs input {
 		width: 540px;
 	}
-	.terms{
+	.terms {
 		margin-left: 139px;
 	}
 }
